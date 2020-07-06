@@ -1,14 +1,11 @@
 # In this archive we have to define the dictionary ml_info. This is a dictionary of dictionaries, that for each of the ML models we want
 # assigns a dictionary that contains:
 #
-# clf: a scikit-learn classifier, or any object that implements the functions fit, and predict_proba or decision_function in the same way.
-# formal_name: name to be used in plots and report
+# 'clf': a scikit-learn classifier, or any object that implements the functions fit, and predict_proba or decision_function in the same way.
+# 'formal_name': name to be used in plots and report
+# 'calibration': can be None, 'sigmoid' or 'isotonic' 
 #
-# In this archive we provide 4 examples:
-# RF for Random Forest
-# BT for Boosted Trees
-# LR for Logistic Regression
-# RF_pipeline for a Random Forest with hyperparameter tuning including the choice of feature selection strategy
+
 
 import sklearn.ensemble as sk_en
 import sklearn.linear_model as sk_lm
